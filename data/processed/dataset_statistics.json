@@ -1,0 +1,85 @@
+{
+  "provenance": {
+    "repo": "https://github.com/nfq729/MT-CSD",
+    "commit": "0707ec6372e747f59ada31f2301614413438e120",
+    "download_date": "2026-11-09"
+  },
+  "dataset": "MT-CSD repository release, 5 targets; LLM-generated annotation columns dropped on purpose",
+  "seed": 42,
+  "official_split_used": true,
+  "audit_before_cleaning": {
+    "n_rows": 15505,
+    "n_threads": 218,
+    "missing_text": 0,
+    "missing_label": 0,
+    "unmapped_labels": [],
+    "json_path_mismatch": 0,
+    "parent_missing": 0,
+    "rows_with_any_missing_ancestor": 0,
+    "threads_spanning_multiple_official_splits": 0
+  },
+  "cleaning_log": {
+    "start": 15505,
+    "dropped_bad_label_or_text": 0,
+    "end": 15505
+  },
+  "splits": {
+    "train": {
+      "n_examples": 10925,
+      "n_threads": 150,
+      "label_dist": {
+        "NONE": 5281,
+        "AGAINST": 3300,
+        "FAVOR": 2344
+      },
+      "target_dist": {
+        "Trump": 2633,
+        "Tesla": 2552,
+        "Bitcoin": 2283,
+        "Biden": 2017,
+        "SpaceX": 1440
+      },
+      "mean_depth": 3.815,
+      "pct_depth_gt3": 0.5535,
+      "n_missing_parent": 0
+    },
+    "validation": {
+      "n_examples": 2209,
+      "n_threads": 33,
+      "label_dist": {
+        "NONE": 1064,
+        "AGAINST": 679,
+        "FAVOR": 466
+      },
+      "target_dist": {
+        "Trump": 557,
+        "Tesla": 536,
+        "Bitcoin": 431,
+        "Biden": 417,
+        "SpaceX": 268
+      },
+      "mean_depth": 3.814,
+      "pct_depth_gt3": 0.5541,
+      "n_missing_parent": 0
+    },
+    "test": {
+      "n_examples": 2371,
+      "n_threads": 35,
+      "label_dist": {
+        "NONE": 1181,
+        "AGAINST": 724,
+        "FAVOR": 466
+      },
+      "target_dist": {
+        "Trump": 561,
+        "Tesla": 540,
+        "Bitcoin": 538,
+        "Biden": 411,
+        "SpaceX": 321
+      },
+      "mean_depth": 3.767,
+      "pct_depth_gt3": 0.542,
+      "n_missing_parent": 0
+    }
+  }
+}
